@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instagram Clone</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js"></script>
+</head>
+<body>
+  <header>
+    <div class="logo">
+       <img id="logo-img" class="logo"src="logo.png" alt="Logo Icon">
+    </div>
+    <div id="search" class="search-bar">
+      <input  type="text" placeholder="Search">
+    </div>
+    <div class="icons">
+      <img id="lupa" src="heart-icon.png" alt="Heart Icon">
+      <img src="profile-icon.png" alt="Profile Icon">
+      <img src="menu-aberto.png" alt="Menu Icon" onclick="toggleTheme()">
+    </div>
+  </header>
+
+  <main>
+    <div class="feed">
+      <!-- Post 1 -->
+      <div class="post">
+        <img src="post/post1.jpg" alt="Post 1">
+        <div class="post-info">
+          <span class="username">john_doe</span>
+          <span class="likes">167 likes</span>
+          <p class="caption">This is an amazing photo!</p>
+        </div>
+      </div>
+
+      <!-- Post 2 -->
+      <div class="post">
+        <img src="post/post2.jpg" alt="Post 2">
+        <div class="post-info">
+          <span class="username">jane_smith</span>
+          <span class="likes">15 likes</span>
+          <p class="caption">Lindo pôr do sol!!</p>
+        </div>
+      </div>
+    <!-- Post 3 -->
+      <div class="post">
+        <img src="post/post3.jpg" alt="Post 2">
+        <div class="post-info">
+          <span class="username">João</span>
+          <span class="likes">152 likes</span>
+          <p class="caption">Esta é uma foto incrível!!</p>
+        </div>
+      </div>
+       <!-- Post 4 -->
+      <div class="post">
+        <img src="post/post4.jpg" alt="Post 2">
+        <div class="post-info">
+          <span class="username">Liandra</span>
+          <span class="likes">276 likes</span>
+          <p class="caption">Lindo Dia</p>
+        </div>
+      </div>
+            <!-- Post 5 -->
+            <div class="post">
+                <img src="post/post5.jpg" alt="Post 1">
+                <div class="post-info">
+                  <span class="username">Luan</span>
+                  <span class="likes">103 likes</span>
+                  <p class="caption">This is an amazing photo!</p>
+                </div>
+              </div>
+        
+              <!-- Post 6 -->
+              <div class="post">
+                <img src="post/post6.jpg" alt="Post 2">
+                <div class="post-info">
+                  <span class="username">Kelvin</span>
+                  <span class="likes">1.542 likes</span>
+                  <p class="caption">Lindo pôr do sol!!</p>
+                </div>
+              </div>
+      <!-- More posts can be added here -->
+    </div>
+  </main>
+
+  <footer>
+    <img src="home-icon.png" alt="Home Icon">
+    <img src="search-icon.png" alt="Search Icon">
+    <img src="add-icon.png" alt="Add Icon">
+    <img src="heart-icon.png" alt="Heart Icon">
+    <img src="profile-icon.png" alt="Profile Icon">
+  </footer>
+</body>
+</html>
