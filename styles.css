@@ -1,0 +1,144 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  /*Tema  dark*/
+    body.dark {
+    background-color: #000000;
+    color: #fff;
+  }
+  
+  header.preto{
+    color: #fff;
+    background-color: #000000;
+    box-shadow: 0 0 4px #363636;
+  }
+  .post-dark {
+    border: 1px solid #363636!important;
+    background-color: #363636;
+
+  }
+  .footer-dark{
+    background-color: black;
+    box-shadow: 0 0 4px #363636;
+  }
+  .search-bar-dark input{
+    border: 1px solid #000!important;
+    background-color: #363636;
+    border-radius: 10px;
+    box-shadow: 0 0 0 0;
+    outline: 0;
+  }
+
+
+  /*Tema Defalt */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    background-color: #fff;
+    box-shadow: 0 0 4px black;
+  }
+
+  .logo {
+    width: 115px;
+  }
+  
+  .search-bar {
+    flex: 1;
+    margin: 0 16px;
+  }
+  
+  .search-bar input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 0 0;
+    outline: 0;
+  }
+  
+  .icons img {
+    width: 24px;
+    margin-left: 16px;
+  }
+  
+  main {
+    padding: 20px;
+    padding-bottom: 60px;
+  }
+  
+  .feed {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+  }
+  
+  .post {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .post img {
+    width: 100%;
+    border-radius: 4px 4px 0 0;
+    height: 600px;
+    object-fit: cover;
+    object-position: center;
+  }
+  
+  .post-info {
+    padding: 8px;
+  }
+  
+  .username {
+    font-weight: bold;
+  }
+  
+  .caption {
+    margin-top: 8px;
+  }
+  
+  footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 8px;
+    background-color: #fff;
+    box-shadow: 0 0 1px black;
+
+  }
+  
+  footer img {
+    width: 24px;
+    height: 24px;
+
+  }
+/* Media query para dispositivos móveis */
+@media screen and (max-width: 600px) {
+    .feed {
+      grid-template-columns: 1fr;
+    }
+    .post img {
+        height: 600px%;
+    }
+  }  
+/* Media query para dispositivos móveis */
+@media screen and (min-width: 601px) and (max-width: 1024px)  {
+    .feed {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  @media screen and (min-width: 1024px) {
+    main{
+        padding-left: 8%;
+        padding-right: 8%;
+    }
+    }
